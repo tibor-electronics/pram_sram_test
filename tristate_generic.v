@@ -9,9 +9,9 @@
 module tristate_generic
 #(parameter N = 8)
 (
-    input wire [N-1:0] in,
-    input wire en,
-    output reg [N-1:0] out
+	input wire [N-1:0] in,
+	input wire en,
+	output reg [N-1:0] out
 );
 
 always @(*)

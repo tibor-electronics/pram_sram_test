@@ -8,25 +8,25 @@
 //
 
 module pram_sram_ctrl(
-    input clk,
-    input clr,
-    input go,
-	 input halt,
-    output reg we,
-    output [17:0] sram_addr,
-	 output [5:0] pattern,
-    output reg en
+	input clk,
+	input clr,
+	input go,
+	input halt,
+	output reg we,
+	output [17:0] sram_addr,
+	output [5:0] pattern,
+	output reg en
 );
 
 reg[2:0] state;
 parameter
-	START			= 3'b000,
+	START		= 3'b000,
 	ADDROUT		= 3'b001,
-	TEST1			= 3'b010,
+	TEST1		= 3'b010,
 	WAIT_AND_GO	= 3'b011,
-	READ			= 3'b100,
-	TEST2			= 3'b101,
-	HALT			= 3'b110;
+	READ		= 3'b100,
+	TEST2		= 3'b101,
+	HALT		= 3'b110;
 reg [17:0] addrv;
 reg [5:0] patternv;
 

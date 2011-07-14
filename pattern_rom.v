@@ -3,9 +3,9 @@
 // See LICENSE file for licensing information
 //
 module pattern_rom(
-    input clk,
-    inout [5:0] addr,
-    output reg [15:0] data
+	input clk,
+	inout [5:0] addr,
+	output reg [15:0] data
 );
 
 reg [5:0] addr_reg;

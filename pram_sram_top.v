@@ -4,21 +4,21 @@
 //
 
 module pram_sram_top(
-    input wire clk,
-    input wire button,
-    output wire [6:0] a_to_g,
-    output wire [3:0] an,
-    output wire [6:0] a_to_g2,
-    output wire [3:0] an2,
-	 output reg good,
-	 output reg bad,
-	 output wire [1:0] hi_addr,
-	 output wire [18:0] addr,
-    inout wire [15:0] data,
-    output wire ce,
-    output wire be,
-    output wire we,
-    output wire oe
+	input wire clk,
+	input wire button,
+	output wire [6:0] a_to_g,
+	output wire [3:0] an,
+	output wire [6:0] a_to_g2,
+	output wire [3:0] an2,
+	output reg good,
+	output reg bad,
+	output wire [1:0] hi_addr,
+	output wire [18:0] addr,
+	inout wire [15:0] data,
+	output wire ce,
+	output wire be,
+	output wire we,
+	output wire oe
 );
 
 wire clr, en, dclk, bclk, fclk;
@@ -38,11 +38,11 @@ assign hi_addr = sram_addr[17:16];
 
 // custom clock
 dcm_clock main_clock (
-    .CLKIN_IN(clk),
-    .RST_IN(clr),
-    .CLKFX_OUT(fclk)
-    //.CLKIN_IBUFG_OUT(), 
-    //.CLK0_OUT(CLK0_OUT)
+	.CLKIN_IN(clk),
+	.RST_IN(clr),
+	.CLKFX_OUT(fclk)
+	//.CLKIN_IBUFG_OUT(), 
+	//.CLK0_OUT(CLK0_OUT)
 );
 
 // controller

@@ -1,12 +1,12 @@
 module sram_ctrl_a(
-    input clk,
-    input clr,
-    input go,
-	 input halt,
-    output reg we,
-    output [17:0] sram_addr,
-	 output [2:0] pattern,
-    output reg en
+	input clk,
+	input clr,
+	input go,
+	input halt,
+	output reg we,
+	output [17:0] sram_addr,
+	output [2:0] pattern,
+	output reg en
 );
 
 reg[2:0] state;

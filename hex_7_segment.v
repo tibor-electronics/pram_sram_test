@@ -7,11 +7,11 @@
 // Chapter 5, Example 15, 7-Segment Displays
 //
 module hex_7_segment(
-    input wire [15:0] x,
-    input wire clk,
-    input wire clr,
-    output reg [6:0] a_to_g,
-    output reg [3:0] an
+	input wire [15:0] x,
+	input wire clk,
+	input wire clr,
+	output reg [6:0] a_to_g,
+	output reg [3:0] an
 );
 
 wire [1:0] s;

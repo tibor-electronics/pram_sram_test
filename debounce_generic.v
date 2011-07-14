@@ -9,10 +9,10 @@
 module debounce_generic
 #(parameter N = 1)
 (
-    input [N-1:0] in,
-    input clk,
-    input clr,
-    output [N-1:0] out
+	input [N-1:0] in,
+	input clk,
+	input clr,
+	output [N-1:0] out
 );
 
 reg [N-1:0] delay1;

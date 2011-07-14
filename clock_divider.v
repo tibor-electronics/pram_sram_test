@@ -7,10 +7,10 @@
 // Chapter 7, Example 52, Clock Divider
 //
 module clock_divider(
-    input clk,
-    input clr,
-	 output clk6,
-    output clk17
+	input clk,
+	input clr,
+	output clk6,
+	output clk17
 );
 
 reg [17:0] q;
