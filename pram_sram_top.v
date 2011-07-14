@@ -3,7 +3,7 @@
 // See LICENSE file for licensing information
 //
 
-module sram_top(
+module pram_sram_top(
     input wire clk,
     input wire button,
     output wire [6:0] a_to_g,
