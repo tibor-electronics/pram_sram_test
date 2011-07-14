@@ -1,0 +1,104 @@
+NET "clk" LOC = "C8" | IOSTANDARD = LVCMOS25 | PERIOD = 31.25ns;
+
+# Digit Anodes
+NET "an<0>" LOC = "A3";
+NET "an<1>" LOC = "A4";
+NET "an<2>" LOC = "A5";
+NET "an<3>" LOC = "D7";
+
+# Digit Segments
+NET "a_to_g<0>" LOC = "A6";
+NET "a_to_g<1>" LOC = "A7";
+NET "a_to_g<2>" LOC = "A8";
+NET "a_to_g<3>" LOC = "F8";
+NET "a_to_g<4>" LOC = "C10";
+NET "a_to_g<5>" LOC = "C9";
+NET "a_to_g<6>" LOC = "B10";
+
+# Digit Anodes
+NET "an2<0>" LOC = "B3";
+NET "an2<1>" LOC = "B4";
+NET "an2<2>" LOC = "C5";
+NET "an2<3>" LOC = "C6";
+
+# Digit Segments
+NET "a_to_g2<0>" LOC = "B6";
+NET "a_to_g2<1>" LOC = "C7";
+NET "a_to_g2<2>" LOC = "B8";
+NET "a_to_g2<3>" LOC = "E7";
+NET "a_to_g2<4>" LOC = "D9";
+NET "a_to_g2<5>" LOC = "A9";
+NET "a_to_g2<6>" LOC = "A10";
+
+# Switches
+#NET "sw<0>" LOC = "N12";
+#NET "sw<1>" LOC = "R9";
+#NET "sw<2>" LOC = "T12";
+#NET "sw<3>" LOC = "T13";
+#NET "sw<4>" LOC = "P7";
+#NET "sw<5>" LOC = "N9";
+#NET "sw<6>" LOC = "N10";
+#NET "sw<7>" LOC = "T4";
+#NET "sw<8>" LOC = "R13";
+#NET "sw<9>" LOC = "P12";
+#NET "sw<10>" LOC = "T9";
+#NET "sw<11>" LOC = "P13";
+#NET "sw<12>" LOC = "R5";
+#NET "sw<13>" LOC = "M10";
+#NET "sw<14>" LOC = "P9";
+#NET "sw<15>" LOC = "N8";
+
+# Buttons
+NET "button" LOC = "R5";
+#NET "button<1>" LOC = "P9";
+
+# LEDs
+NET "good" LOC = "M10";
+NET "bad" LOC = "N8";
+NET "hi_addr<0>" LOC = "P6";
+NET "hi_addr<1>" LOC = "N1";
+
+# Address lines
+NET "addr<0>" LOC = "C15";
+NET "addr<1>" LOC = "C16";
+NET "addr<2>" LOC = "D15";
+NET "addr<3>" LOC = "D16";
+NET "addr<4>" LOC = "E16";
+NET "addr<5>" LOC = "M16";
+NET "addr<6>" LOC = "N16";
+NET "addr<7>" LOC = "P15";
+NET "addr<8>" LOC = "P16";
+NET "addr<9>" LOC = "R15";
+NET "addr<10>" LOC = "M13";
+NET "addr<11>" LOC = "N13";
+NET "addr<12>" LOC = "N14";
+NET "addr<13>" LOC = "L13";
+NET "addr<14>" LOC = "M14";
+NET "addr<15>" LOC = "D14";
+NET "addr<16>" LOC = "E13";
+NET "addr<17>" LOC = "F13";
+NET "addr<18>" LOC = "L14";
+
+# Data lines
+NET "data<0>" LOC = "F16";
+NET "data<1>" LOC = "G16";
+NET "data<2>" LOC = "H15";
+NET "data<3>" LOC = "H16";
+NET "data<4>" LOC = "J16";
+NET "data<5>" LOC = "K15";
+NET "data<6>" LOC = "K16";
+NET "data<7>" LOC = "L16";
+NET "data<8>" LOC = "K13";
+NET "data<9>" LOC = "K14";
+NET "data<10>" LOC = "J14";
+NET "data<11>" LOC = "J13";
+NET "data<12>" LOC = "H14";
+NET "data<13>" LOC = "G14";
+NET "data<14>" LOC = "H13";
+NET "data<15>" LOC = "F14";
+
+# Control lines
+NET "ce" LOC = "F15";
+NET "we" LOC = "M15";
+NET "oe" LOC = "G13";
+NET "be" LOC = "E14";
